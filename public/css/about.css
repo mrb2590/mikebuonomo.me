@@ -1,0 +1,23 @@
+.profile-img {
+    float: left;
+    width: 110px;
+    margin-right: 15px;
+}
+.profile-img img {
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    border: 4px solid #fff;
+}
+.fa-ul {
+    margin-left: 0;
+}
+.fa-li {
+    position: initial;
+}
+.fa-ul>li {
+    line-height: 33px;
+}
+.profile-about {
+    padding-top: 20px;
+}
