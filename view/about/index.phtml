@@ -163,3 +163,16 @@
         </div>
     </div>
 </div>
+
+<script type="text/javascript">
+$(window).scroll(function() {
+    var position = $(window).scrollTop();
+    var height = 200;
+    $('.brand-logo').css({
+        'opacity': ((height - position) / height) * -1 + 1
+    });
+    $('.profile-img').css({
+        'opacity': ((height - position) / height)
+    }); 
+});
+</script>

@@ -1,3 +1,6 @@
+.brand-logo {
+    opacity: 0;
+}
 .profile-img {
     float: left;
     width: 110px;
