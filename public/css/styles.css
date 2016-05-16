@@ -51,25 +51,25 @@ html, body {
 .white-bg {
     background-color: #ffffff;
 }
-.navy-bg {
-    background-color: #1ab394;
-    color: #ffffff;
-}
 .blue-bg {
-    background-color: #1c84c6;
+    background-color: #337ab7;
     color: #ffffff;
 }
-.lazur-bg {
-    background-color: #23c6c8;
+.green-bg {
+    background-color: #5cb85c;
     color: #ffffff;
 }
 .yellow-bg {
-    background-color: #f8ac59;
-    color: #ffffff;
+    background-color: #f0ad4e;
+    color: #333;
 }
 .red-bg {
-    background-color: #ed5565;
+    background-color: #d9534f;
     color: #ffffff;
+}
+.lightblue-bg {
+    background-color: #5bc0de;
+    color: #333;
 }
 .black-bg {
     background-color: #262626;
