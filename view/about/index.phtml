@@ -1,5 +1,5 @@
 <link href="/css/timeline.css" media="screen" rel="stylesheet" type="text/css">
-<div class="container-fluid">
+<div class="container">
     <div class="row">
         <div class="col-sm-7">
             <div class="profile-info">
@@ -37,7 +37,7 @@
     </div>
 </div>
 
-<div class="container-fluid">
+<div class="container">
     <div class="row">
         <div class="col-sm-12">
             <div id="vertical-timeline" class="vertical-container light-timeline center-orientation">
@@ -70,8 +70,8 @@
                                 <td>PHP, JavaScript (JQuery), HTML5, CSS3, MySQL, MongoDB, Elasticsearch</td>
                             </tr>
                         </table>
-                        <h3>Responsibilities and Projects</h3>
-                        <ul>
+                        <h3>Responsibilities and Projects <i class="fa fa-chevron-down toggle-ul-btn" aria-hidden="true"></i></h3>
+                        <ul class="toggle-ul">
                             <li>Develop and maintain internal admin sites which allow detailed customization and rapid deployment of new configurations for our site's results pages.</li>
                             <li>Built and maintain our E3 website which allows our to clients access their candidate information, generate and download reports, invoices, and more.</li>
                             <li>Write and maintain a large number of scripts which allow us to send candidate information to our clients in real time usually using the RESTful API.</li>
@@ -108,8 +108,8 @@
                                 <td>Bachelor of Science, Computer Science</td>
                             </tr>
                         </table>
-                        <h3>Projects and Achievements</h3>
-                        <ul>
+                        <h3>Projects and Achievements <i class="fa fa-chevron-down toggle-ul-btn" aria-hidden="true"></i></h3>
+                        <ul class="toggle-ul">
                             <li>Built a static website for my wonderful mother <a href="http://www.keyhomesolutions.net">KeyHomeSolutions</a></li>
                             <li>Used a RaspberryPi as a LAMP server to originally host this website</li>
                             <li>Asked to present my website for the annual Computer Science Advisory Board Meeting at William Paterson University in 2014</li>
@@ -146,8 +146,8 @@
                                 <td>RCC is a full service IT firm which provides solutions for the development and support of IT infrastructure.</td>
                             </tr>
                         </table>
-                        <h3>Tasks</h3>
-                        <ul>
+                        <h3>Tasks <i class="fa fa-chevron-down toggle-ul-btn" aria-hidden="true"></i></h3>
+                        <ul class="toggle-ul">
                             <li>Installed/decommissioned servers and network devices</li>
                             <li>Worked in datacenters owned by large companies such as J.P. Morgan</li>
                             <li>A lot of cable patching</li>
@@ -174,5 +174,16 @@ $(window).scroll(function() {
     $('.profile-img').css({
         'opacity': ((height - position) / height)
     }); 
+});
+$(document).on('click', '.toggle-ul-btn', function() {
+    var ul = $(this).parents().siblings('ul.toggle-ul');
+    console.log(ul);
+    if (ul.is(':hidden')) {
+        ul.slideDown();
+        $(this).removeClass('fa-chevron-down').addClass('fa-chevron-up');
+    } else {
+        ul.slideUp();
+        $(this).removeClass('fa-chevron-up').addClass('fa-chevron-down');
+    }
 });
 </script>

@@ -24,3 +24,9 @@
 .profile-about {
     padding-top: 20px;
 }
+.toggle-ul-btn {
+    cursor: pointer;
+}
+.toggle-ul {
+    display: none;
+}
