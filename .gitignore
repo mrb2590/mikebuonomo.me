@@ -1,3 +1,4 @@
 vendor/
+mysqli.php
 composer.lock
 public/.htaccess

@@ -40,4 +40,11 @@ return array(
         'action'     => 'index',
         'layout'     => 'layout/layout',
     ),
+    'blog' => array(
+        'path'       => '/blog/',
+        'method'     => 'GET',
+        'controller' => 'App\Controller\BlogController',
+        'action'     => 'index',
+        'layout'     => 'layout/layout',
+    ),
 );

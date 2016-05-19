@@ -26,6 +26,8 @@
 }
 .toggle-ul-btn {
     cursor: pointer;
+    float: right;
+    padding: 0 5px 5px;
 }
 .toggle-ul {
     display: none;

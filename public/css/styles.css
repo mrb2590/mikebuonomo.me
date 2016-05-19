@@ -87,10 +87,18 @@ html, body {
 }
 .custom-list>tbody>tr>td:first-child {
     width: 50px;
+    padding: 0 15px;
+}
+.custom-list>tbody>tr>td:last-child {
+    padding-right: 15px;
 }
 .custom-list>tbody>tr>td:first-child i {
     font-size: 24px;
     line-height: 40px;
+}
+.custom-list>tbody>tr>td:last-child i {
+    font-size: 20px;
+    margin-left: 8px;
 }
 .custom-list.sm-list {
     margin-bottom: 15px;
