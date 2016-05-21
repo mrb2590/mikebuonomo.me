@@ -40,4 +40,14 @@ return array(
         'action'     => 'index',
         'layout'     => 'layout/layout',
     ),
+    'download-resume' => array(
+        'path'       => '/resume/($)/',
+        'method'     => 'GET',
+        'controller' => 'App\Controller\AppController',
+        'action'     => 'resume',
+        'layout'     => 'layout/layout',
+        'path-vars' => array(
+            'extension' => 1,
+        ),
+    ),
 );
