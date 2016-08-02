@@ -2,3 +2,4 @@ vendor/
 mysqli.php
 composer.lock
 public/.htaccess
+public/robots.txt
